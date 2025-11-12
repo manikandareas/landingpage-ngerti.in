@@ -28,14 +28,14 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2">
-
-          <Button 
-            size="sm" 
-            className="hidden sm:inline-flex"
-            onClick={() => window.location.href = '/signin'}
-          >
-            Masuk
-          </Button>
+          <a href={`${import.meta.env.PUBLIC_APP_URL}/signin`}>
+            <Button 
+              size="sm" 
+              className="hidden sm:inline-flex"
+            >
+              Masuk
+            </Button>
+          </a>
           <ModeToggle />
         </div>
       </div>

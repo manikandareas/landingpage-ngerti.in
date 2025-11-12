@@ -30,13 +30,14 @@ export const CTA = () => {
 
             {/* CTA Button */}
             <div className="pt-4">
-              <Button
-                size="lg"
-                className="h-14 px-10 text-base font-semibold"
-                onClick={() => window.location.href = '/signin'}
-              >
-                Coba Gratis Sekarang 🚀
-              </Button>
+              <a href={`${import.meta.env.PUBLIC_APP_URL}/signin`}>
+                <Button
+                  size="lg"
+                  className="h-14 px-10 text-base font-semibold"
+                >
+                  Coba Gratis Sekarang 🚀
+                </Button>
+              </a>
             </div>
 
             {/* User Avatars */}

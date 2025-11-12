@@ -66,13 +66,14 @@ export const Pricing = () => {
             </div>
 
             {/* CTA Button */}
-            <Button
-              className="w-full h-14 text-base font-semibold bg-[hsl(16,90%,60%)] hover:bg-[hsl(16,90%,55%)] text-white"
-              onClick={() => window.location.href = '/signin'}
-            >
-              Daftar Gratis Sekarang
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href={`${import.meta.env.PUBLIC_APP_URL}/signin`} className="block">
+              <Button
+                className="w-full h-14 text-base font-semibold bg-[hsl(16,90%,60%)] hover:bg-[hsl(16,90%,55%)] text-white"
+              >
+                Daftar Gratis Sekarang
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
 
             {/* Small Print */}
             <p className="text-center text-sm text-muted-foreground mt-4">

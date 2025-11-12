@@ -25,13 +25,14 @@ export const Hero = () => {
         </p>
 
         <div className="mb-6 md:mb-8 px-4 flex justify-center">
-          <Button 
-            size="lg" 
-            className="font-semibold"
-            onClick={() => window.location.href = '/signin'}
-          >
-            Mulai Gratis Sekarang 🚀
-          </Button>
+          <a href={`${import.meta.env.PUBLIC_APP_URL}/signin`}>
+            <Button 
+              size="lg" 
+              className="font-semibold"
+            >
+              Mulai Gratis Sekarang 🚀
+            </Button>
+          </a>
         </div>
 
         <p className="text-xs md:text-sm text-muted-foreground mb-6 md:mb-8">
