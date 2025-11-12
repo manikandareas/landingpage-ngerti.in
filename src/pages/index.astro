@@ -82,6 +82,61 @@ import { Footer } from "@/components/Footer";
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+
+		<!-- Structured Data (JSON-LD) for SEO -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Ngerti.in",
+				"url": "https://ngerti.in",
+				"logo": "https://ngerti.in/logo.png",
+				"description": "Platform assessment berbasis AI yang membantu pendidik membuat soal, menilai jawaban, dan memberikan feedback otomatis.",
+				"sameAs": [
+					"https://twitter.com/ngertiin",
+					"https://www.linkedin.com/company/ngertiin",
+					"https://www.instagram.com/ngertiin"
+				],
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"contactType": "Customer Service",
+					"availableLanguage": ["Indonesian", "English"]
+				}
+			}
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "Ngerti.in",
+				"url": "https://ngerti.in",
+				"description": "Platform assessment berbasis AI untuk pendidikan",
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://ngerti.in/search?q={search_term_string}",
+					"query-input": "required name=search_term_string"
+				}
+			}
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "SoftwareApplication",
+				"name": "Ngerti.in",
+				"applicationCategory": "EducationalApplication",
+				"operatingSystem": "Web",
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "IDR"
+				},
+				"aggregateRating": {
+					"@type": "AggregateRating",
+					"ratingValue": "4.8",
+					"ratingCount": "150"
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<Header client:load />

@@ -13,7 +13,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ngerti.in',
-  output: 'server',
+  output: 'static',
   adapter: cloudflare({
     imageService: 'cloudflare',
     platformProxy: {
