@@ -68,7 +68,7 @@ export const Pricing = () => {
             {/* CTA Button */}
             <Button
               className="w-full h-14 text-base font-semibold bg-[hsl(16,90%,60%)] hover:bg-[hsl(16,90%,55%)] text-white"
-              onClick={() => window.location.href = `${import.meta.env.PUBLIC_APP_URL}/signin`}
+              onClick={() => window.location.href = '/signin'}
             >
               Daftar Gratis Sekarang
               <ArrowRight className="ml-2 h-5 w-5" />

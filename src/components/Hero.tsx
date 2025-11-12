@@ -28,7 +28,7 @@ export const Hero = () => {
           <Button 
             size="lg" 
             className="font-semibold"
-            onClick={() => window.location.href = `${import.meta.env.PUBLIC_APP_URL}/signin`}
+            onClick={() => window.location.href = '/signin'}
           >
             Mulai Gratis Sekarang 🚀
           </Button>

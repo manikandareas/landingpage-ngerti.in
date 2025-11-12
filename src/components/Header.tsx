@@ -32,7 +32,7 @@ export const Header = () => {
           <Button 
             size="sm" 
             className="hidden sm:inline-flex"
-            onClick={() => window.location.href = `${import.meta.env.PUBLIC_APP_URL}/signin`}
+            onClick={() => window.location.href = '/signin'}
           >
             Masuk
           </Button>

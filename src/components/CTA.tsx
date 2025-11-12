@@ -33,7 +33,7 @@ export const CTA = () => {
               <Button
                 size="lg"
                 className="h-14 px-10 text-base font-semibold"
-                onClick={() => window.location.href = `${import.meta.env.PUBLIC_APP_URL}/signin`}
+                onClick={() => window.location.href = '/signin'}
               >
                 Coba Gratis Sekarang 🚀
               </Button>
