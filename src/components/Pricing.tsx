@@ -51,7 +51,7 @@ export const Pricing = () => {
             <div className="space-y-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="mt-0.5 flex-shrink-0">
+                  <div className="mt-0.5 shrink-0">
                     {feature.available ? (
                       <Check className="h-5 w-5 text-green-500" />
                     ) : (
@@ -68,6 +68,7 @@ export const Pricing = () => {
             {/* CTA Button */}
             <Button
               className="w-full h-14 text-base font-semibold bg-[hsl(16,90%,60%)] hover:bg-[hsl(16,90%,55%)] text-white"
+              onClick={() => window.location.href = `${import.meta.env.PUBLIC_APP_URL}/signin`}
             >
               Daftar Gratis Sekarang
               <ArrowRight className="ml-2 h-5 w-5" />

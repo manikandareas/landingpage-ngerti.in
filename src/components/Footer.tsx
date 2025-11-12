@@ -37,7 +37,7 @@ export const Footer = () => {
             {
               name: "Log in",
               Icon: LogIn,
-              href: "#",
+              href: `${import.meta.env.PUBLIC_APP_URL}/signin`,
             },
             {
               name: "Pricing",

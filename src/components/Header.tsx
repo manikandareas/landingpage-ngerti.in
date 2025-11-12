@@ -28,13 +28,15 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ModeToggle />
-          <Button variant="ghost" size="sm">
+
+          <Button 
+            size="sm" 
+            className="hidden sm:inline-flex"
+            onClick={() => window.location.href = `${import.meta.env.PUBLIC_APP_URL}/signin`}
+          >
             Masuk
           </Button>
-          <Button size="sm" className="hidden sm:inline-flex">
-            Daftar Gratis
-          </Button>
+          <ModeToggle />
         </div>
       </div>
     </header>
