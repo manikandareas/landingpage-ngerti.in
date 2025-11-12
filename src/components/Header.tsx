@@ -28,7 +28,7 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a href={`${import.meta.env.PUBLIC_APP_URL}/signin`}>
+          <a href={import.meta.env.PUBLIC_SIGNIN_URL}>
             <Button 
               size="sm" 
               className="hidden sm:inline-flex"

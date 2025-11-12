@@ -66,7 +66,7 @@ export const Pricing = () => {
             </div>
 
             {/* CTA Button */}
-            <a href={`${import.meta.env.PUBLIC_APP_URL}/signin`} className="block">
+            <a href={import.meta.env.PUBLIC_SIGNIN_URL} className="block">
               <Button
                 className="w-full h-14 text-base font-semibold bg-[hsl(16,90%,60%)] hover:bg-[hsl(16,90%,55%)] text-white"
               >

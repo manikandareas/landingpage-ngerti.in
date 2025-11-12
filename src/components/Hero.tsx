@@ -25,7 +25,7 @@ export const Hero = () => {
         </p>
 
         <div className="mb-6 md:mb-8 px-4 flex justify-center">
-          <a href={`${import.meta.env.PUBLIC_APP_URL}/signin`}>
+          <a href={import.meta.env.PUBLIC_SIGNIN_URL}>
             <Button 
               size="lg" 
               className="font-semibold"

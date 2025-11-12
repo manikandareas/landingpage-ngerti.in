@@ -30,7 +30,7 @@ export const CTA = () => {
 
             {/* CTA Button */}
             <div className="pt-4">
-              <a href={`${import.meta.env.PUBLIC_APP_URL}/signin`}>
+              <a href={import.meta.env.PUBLIC_SIGNIN_URL}>
                 <Button
                   size="lg"
                   className="h-14 px-10 text-base font-semibold"
