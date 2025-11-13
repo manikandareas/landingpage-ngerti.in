@@ -1,3 +1,5 @@
+import { HeroVideoDialog } from "./ui/hero-video-dialog";
+
 export const WhatIsLab = () => {
   return (
     <section className="py-16 md:py-24 px-4 bg-background">
@@ -16,16 +18,13 @@ export const WhatIsLab = () => {
           </p>
         </div>
 
-        <div className="relative w-full max-w-4xl mx-auto">
-          <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg border border-border bg-background">
-            <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Apa itu Lab?"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+        <div className="w-full max-w-4xl mx-auto">
+          <HeroVideoDialog
+            animationStyle="from-center"
+            videoSrc="https://www.youtube.com/embed/FZPRgrP_s4E?si=2OG6YoIqQN7JiyTY"
+            thumbnailSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&h=1080&fit=crop"
+            thumbnailAlt="Apa itu Lab?"
+          />
         </div>
       </div>
     </section>
