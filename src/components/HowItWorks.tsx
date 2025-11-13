@@ -48,7 +48,7 @@ const StepCard = ({
       </Card>
 
       {showArrow && (
-        <ArrowRight className="hidden lg:block h-8 w-8 text-muted-foreground/30 shrink-0 mx-4" />
+        <ArrowRight className="hidden lg:block h-8 w-8 text-muted-foreground/30 shrink-0 mx-4 self-center" />
       )}
     </>
   );
