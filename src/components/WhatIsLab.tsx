@@ -12,7 +12,7 @@ export const WhatIsLab = () => {
             Apa itu Lab?
           </h2>
           <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Lab adalah assessment interaktif yang dibuat dari konten Anda. Lihat bagaimana Lab bekerja dalam video di bawah ini.
+            Lab adalah pusat kendali soal-soalmu. Kelola dengan mudah, buat sesi pengerjaan, dan bagikan ke siapa saja untuk dikerjakan bersama-sama—semua dalam satu tempat!
           </p>
         </div>
 
