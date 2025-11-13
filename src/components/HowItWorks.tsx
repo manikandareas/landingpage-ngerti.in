@@ -90,7 +90,7 @@ export const HowItWorks = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="h-14 px-8 text-lg font-semibold">
+          <Button size="lg" className="font-semibold">
             Mulai Gratis Sekarang
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
