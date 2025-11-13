@@ -4,7 +4,7 @@ import { LogoWithText } from "./ui/logo";
 
 export const Header = () => {
   return (
-    <header className="border-b border-border bg-background">
+    <header className="bg-background">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <a href="/" className="flex items-center gap-2">
        <LogoWithText/>

@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Image } from "astro:assets";
 
 export const FounderStory = () => {
   return (
@@ -15,7 +16,7 @@ export const FounderStory = () => {
                   className="w-full h-full object-cover"
                 />
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-background/40 via-transparent to-transparent" />
               </div>
             </Card>
           </div>
