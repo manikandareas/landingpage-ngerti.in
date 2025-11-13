@@ -1,16 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ModeToggle";
+import { LogoWithText } from "./ui/logo";
 
 export const Header = () => {
   return (
     <header className="border-b border-border bg-background">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <div className="flex items-center gap-2">
-          <div className="flex items-center justify-center h-8 w-8 rounded-lg bg-primary text-primary-foreground font-bold text-lg">
-            N
-          </div>
-          <span className="text-xl font-bold text-foreground">Ngerti.in</span>
-        </div>
+        <a href="/" className="flex items-center gap-2">
+       <LogoWithText/>
+        </a>
 
         <nav className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
