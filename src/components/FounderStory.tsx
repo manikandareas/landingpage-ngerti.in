@@ -25,46 +25,42 @@ export const FounderStory = () => {
             <div className="flex items-center gap-2 text-foreground/80">
               <span className="text-lg md:text-xl">👋</span>
               <span className="text-sm md:text-base">
-                Hey, <span className="font-semibold text-foreground">Pendidik</span> dari <span className="font-semibold text-foreground">Indonesia</span> 🇮🇩
+                Hey, <span className="relative mx-0.5 animate-pulse cursor-pointer rounded-sm px-1 text-base-content underline decoration-primary/80 decoration-wavy decoration-2 underline-offset-[3px] duration-150 ease-in-out hover:animate-none hover:bg-primary/20 hover:decoration-primary font-semibold">Teman-teman</span> dari <span className="font-semibold text-foreground">Indonesia</span> 🇮🇩
               </span>
             </div>
 
             <p className="text-foreground/80 text-sm md:text-base leading-relaxed">
-              Saya founder Ngerti.in. Sebagai mantan pendidik, saya tahu betapa{" "}
-              <span className="font-semibold text-foreground">melelahkannya membuat soal setiap minggu</span>.
+              Pernah nggak sih dapat soal ujian tapi materinya{" "}
+              <span className="font-semibold text-foreground">nggak nyambung sama yang dipelajari?</span>{" "}
+              Kami sebagai pelajar sering banget ngalamin ini.
             </p>
 
             <p className="text-foreground/80 text-sm md:text-base leading-relaxed">
-              Saya belajar bahwa <span className="font-semibold text-foreground">teknologi AI bisa jadi game-changer untuk pendidikan</span>.
-              Tapi kebanyakan tools hanya fokus pada <span className="italic text-foreground/60">automation tanpa personalisasi</span>...
-            </p>
-
-            <p className="text-foreground/60 italic text-sm md:text-base leading-relaxed pl-4 border-l-2 border-border">
-              Generate soal otomatis, tapi apakah soal-soal itu benar-benar relevan dengan materi
-              yang kamu ajarkan? Apakah feedback-nya membantu siswa belajar lebih baik?
+              Makanya kami bikin <span className="font-semibold text-foreground">Ngerti.in</span> — platform yang{" "}
+              <span className="font-semibold text-foreground">generate soal yang bener-bener relevan</span> dengan materi yang lagi dipelajari.
             </p>
 
             <div className="space-y-2 pt-2">
               <p className="text-foreground/80 text-sm md:text-base font-medium">
-                Makanya saya buat Ngerti.in dengan 3 prinsip:
+                Yang bikin Ngerti.in beda:
               </p>
               <div className="space-y-2 pl-1">
                 <p className="text-foreground/80 text-sm md:text-base">
-                  1. <span className="font-semibold text-foreground">Hemat waktu pendidik</span> tanpa mengorbankan kualitas soal.
+                  ✨ <span className="font-semibold text-foreground">Soal yang relevan</span> — disesuaikan dengan materi yang lagi dipelajari
                 </p>
                 <p className="text-foreground/80 text-sm md:text-base">
-                  2. <span className="font-semibold text-foreground">Bantu siswa belajar lebih efektif</span> lewat feedback real-time yang personal.
+                  ⚡ <span className="font-semibold text-foreground">Cepet banget</span> — generate soal dalam hitungan menit
                 </p>
                 <p className="text-foreground/80 text-sm md:text-base">
-                  3. <span className="font-semibold text-foreground">Data-driven insights</span> untuk keputusan pembelajaran yang lebih baik.
+                  📊 <span className="font-semibold text-foreground">Feedback real-time</span> — siswa langsung tahu jawaban yang bener & kenapa
                 </p>
               </div>
             </div>
 
             <p className="text-foreground/80 text-sm md:text-base leading-relaxed pt-2">
-              Saya build Ngerti.in untuk{" "}
-              <span className="font-semibold text-foreground">500+ pendidik Indonesia</span>{" "}
-              yang percaya teknologi bisa bikin pembelajaran lebih bermakna. Mari kita ciptakan masa depan pendidikan bersama! 🚀
+              Sekarang udah dipake sama{" "}
+              <span className="font-semibold text-foreground">500+ pendidik di Indonesia</span>.{" "}
+              Yuk, bikin belajar jadi lebih seru & efektif! 🚀
             </p>
           </div>
         </div>

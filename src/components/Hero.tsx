@@ -16,7 +16,7 @@ export const Hero = () => {
     <section className="py-12 md:py-20 px-4 relative overflow-hidden min-h-[60vh]">
       <div className="container mx-auto max-w-5xl text-center relative z-20">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 px-2">
-          Buat soal dan kerjakan dalam hitungan menit?
+          Buat soal dan kerjakan dalam hitungan <span className="relative mx-0.5 cursor-pointer rounded-sm px-1 text-base-content underline decoration-primary/80 decoration-wavy decoration-2 underline-offset-[3px] duration-150 ease-in-out hover:animate-none hover:bg-primary/20 hover:decoration-primary">menit?</span>
         </h1>
 
         <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed px-4">

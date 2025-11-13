@@ -7,19 +7,35 @@ const StepCard = ({
   visual,
   title,
   description,
-  showArrow = true
+  showArrow = true,
 }: {
   number: number;
-  visual: React.ReactNode;
+  visual: React.ReactNode | string;
   title: string;
   description: string;
   showArrow?: boolean;
 }) => {
+  const renderVisual = () => {
+    if (typeof visual === "string") {
+      // If visual is a string (URL), render as img with autoplay and loop
+      return (
+        <img
+          src={visual}
+          alt={title}
+          className="w-full h-full object-contain"
+          loading="lazy"
+        />
+      );
+    }
+    // Otherwise render as ReactNode (icons, etc.)
+    return visual;
+  };
+
   return (
     <>
       <Card className="flex-1 bg-card/30 backdrop-blur-sm border-border/30 overflow-hidden hover:border-primary/20 transition-all duration-300">
-        <div className="aspect-4/3 bg-muted/20 border-b border-border/30 flex items-center justify-center p-6">
-          {visual}
+        <div className="aspect-auto bg-muted/20 border-b border-border/30 flex items-center justify-center">
+          {renderVisual()}
         </div>
         <div className="p-6">
           <h3 className="text-lg font-semibold text-foreground mb-2">
@@ -56,32 +72,22 @@ export const HowItWorks = () => {
         <div className="flex flex-col lg:flex-row items-stretch gap-6 mb-12">
           <StepCard
             number={1}
-            visual={
-              <div className="w-full h-full flex items-center justify-center">
-                <FileText className="h-24 w-24 text-primary/60" />
-              </div>
-            }
+            visual={"https://ngertiin-zone.b-cdn.net/landing/upload-materi.gif"}
             title="Upload Materi"
             description="Upload PDF, paste URL, atau ketik langsung. AI langsung proses dalam hitungan detik—gak perlu format khusus."
           />
 
           <StepCard
             number={2}
-            visual={
-              <div className="w-full h-full flex items-center justify-center">
-                <Wand2 className="h-24 w-24 text-primary/60" />
-              </div>
-            }
+            visual={"https://ngertiin-zone.b-cdn.net/landing/generasi-soal.gif"}
             title="AI Bikin Soal"
-            description="Dalam 2-5 menit, soal pilihan ganda dan essay siap pakai. Tinggal cek dan edit kalau perlu—atau langsung share."
+            description="Dalam 2-5 menit, soal pilihan ganda siap pakai. Tinggal cek dan edit kalau perlu—atau langsung share."
           />
 
           <StepCard
             number={3}
             visual={
-              <div className="w-full h-full flex items-center justify-center">
-                <BarChart3 className="h-24 w-24 text-primary/60" />
-              </div>
+              "https://ngertiin-zone.b-cdn.net/landing/live-monitoring.gif"
             }
             title="Pantau Real-time"
             description="Siswa join pakai kode 6 digit. Kamu pantau siapa yang stuck, lihat statistik detail, dan analisa hasilnya—semua real-time."
