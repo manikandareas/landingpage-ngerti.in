@@ -21,8 +21,8 @@ export const WhatIsLab = () => {
         <div className="w-full max-w-4xl mx-auto">
           <HeroVideoDialog
             animationStyle="from-center"
-            videoSrc="https://www.youtube.com/embed/FZPRgrP_s4E?si=2OG6YoIqQN7JiyTY"
-            thumbnailSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&h=1080&fit=crop"
+            videoSrc="https://ngertiin-zone.b-cdn.net/landing/Demo%20Lab%20Ngerti.in.mp4"
+            thumbnailSrc="https://ngertiin-zone.b-cdn.net/landing/Demo%20Lab%20Ngerti.in-Cover.jpg"
             thumbnailAlt="Apa itu Lab?"
           />
         </div>
